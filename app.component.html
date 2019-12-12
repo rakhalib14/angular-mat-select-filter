@@ -1,9 +1,9 @@
 <div class="center">
 <mat-form-field>
-	<mat-select placeholder="Using array of objects">
-		<mat-select-filter [placeholder]="'Filter'" [displayMember]="'name'" [array]="numbers" (filteredReturn)="filteredNumbers =$event"></mat-select-filter>
-		<mat-option *ngFor="let number of filteredNumbers" [value]="item">
-			{{item.name}}
+	<mat-select placeholder="Select number">
+		<mat-select-filter [placeholder]="'Select'" [displayMember]="'name'" [array]="numbers" (filteredReturn)="filteredNumbers =$event"></mat-select-filter>
+		<mat-option *ngFor="let number of filteredNumbers" [value]="number">
+			{{number.name}}
 		</mat-option>
 	</mat-select>
 </mat-form-field>
