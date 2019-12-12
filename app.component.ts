@@ -18,6 +18,6 @@ export class AppComponent  {
     { id: 9, name: 'Nine' }, 
     { id: 10, name: 'Ten' }];
 
-    public filteredNUmbers = this.numbers.slice();
+    public filteredNumbers = this.numbers.slice();
     
 }
