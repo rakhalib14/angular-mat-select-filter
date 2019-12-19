@@ -1,6 +1,7 @@
 <div class="center">
 <mat-form-field>
-	<mat-select placeholder="Select number">
+	<mat-label>Select number ({{this.numbers.length ? this.numbers.length : 'no data'}})</mat-label>
+	<mat-select>
 		<mat-select-filter [placeholder]="'Select'" [displayMember]="'name'" [array]="numbers" (filteredReturn)="filteredNumbers =$event"></mat-select-filter>
 		<mat-option *ngFor="let number of filteredNumbers" [value]="number">
 			{{number.name}}
